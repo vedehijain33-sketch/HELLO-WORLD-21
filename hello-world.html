@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101027">
-  <title>Hello, World!</title>
+  <title>Hi, my name is vedehi</title>
   <style>
     :root {
       color-scheme: dark;
@@ -33,7 +33,7 @@
       position: fixed;
       width: 22rem;
       aspect-ratio: 1;
-      border: 1px solid rgb(255 255 255 / 8%);
+      border: 1px solid rgba(255, 68, 68, 0.08);
       border-radius: 50%;
       box-shadow: 0 0 100px rgb(132 105 255 / 12%), inset 0 0 70px rgb(132 105 255 / 8%);
       pointer-events: none;
@@ -126,6 +126,29 @@
       box-shadow: 0 0 12px #7bf0c4;
     }
 
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: .65rem;
+      margin-top: 2rem;
+    }
+
+    nav a {
+      padding: .65rem .95rem;
+      border: 1px solid rgb(255 255 255 / 13%);
+      border-radius: 999px;
+      color: #d9d5f5;
+      font-size: .9rem;
+      text-decoration: none;
+      transition: background 180ms ease, border-color 180ms ease;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      border-color: rgb(195 187 255 / 55%);
+      background: rgb(255 255 255 / 8%);
+    }
+
     @keyframes arrive {
       from {
         opacity: 0;
@@ -152,6 +175,10 @@
     <h1><span>Hello,</span><span>World!</span></h1>
     <p class="message">A fresh start, a blank canvas, and a whole world of possibilities. Glad you’re here.</p>
     <div class="signature"><span class="dot" aria-hidden="true"></span> All systems feeling good</div>
+    <nav aria-label="Main navigation">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </main>
 </body>
 </html>
